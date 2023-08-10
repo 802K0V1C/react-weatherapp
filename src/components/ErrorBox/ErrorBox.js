@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import styles from './ErrorBox.module.scss';
-
 const ErrorBox = ({ children }) => {
   return (
     <div className={styles.errorBox}>
@@ -10,13 +9,12 @@ const ErrorBox = ({ children }) => {
       </h1>
       <p>
         {children}
+        There is no such city!
       </p>
     </div>
   );
 };
-
 ErrorBox.propTypes = { 
   children: PropTypes.string
 };
-
 export default ErrorBox;
